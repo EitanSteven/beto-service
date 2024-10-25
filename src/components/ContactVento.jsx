@@ -1,6 +1,6 @@
 //import { Clock } from "lucide-react";
 import QrCode from '../assets/qr.png';
-import { MapPin, Clock } from "./icons";
+import { MapPin, Clock, CopyNumber } from "./icons";
 
 import { useClima } from "../hooks/useClima";
 
@@ -34,6 +34,7 @@ export default function ContactVento() {
                 </p>
                 <br />
                 <p className="text">¡Espero trabajar para ti!</p>
+                <p className='wp-number'>+54 9 2284 53-3866</p>
             </div>
             {/* Weather Widget Box */}
             <div className="box small-box">

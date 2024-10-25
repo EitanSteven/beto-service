@@ -491,6 +491,22 @@ p {
   padding: 1.5rem;
   grid-column: 1/3;
   grid-row: 1/3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.CopyNumber {
+  width: 25px;
+  height: 25px;
+}
+
+.wp-number {
+  color: var(--naranja-beto);
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .small-box {

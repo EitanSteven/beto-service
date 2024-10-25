@@ -11,12 +11,12 @@ export function Hero() {
                     <p>Más de 15 años de experiencia mejorando la seguridad y calidad de vida de los hogares y familias de Olavarría.</p>
                     <section className='hero-btns'>
                         <button className="btn service-btn">
-                            <a href="#">Servicios</a>
+                            <a href="#services">Servicios</a>
                             <ServiceIcon />
                         </button>
 
                         <button className="btn contact-btn">
-                            <a href="#">Contáctame</a>
+                            <a href="#contact">Contáctame</a>
                             <ContactIcon />
                         </button>
                     </section>
