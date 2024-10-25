@@ -1,0 +1,80 @@
+{
+    "BuenosAires": {
+        "summer": [
+            {
+                "year": 1990,
+                "avgTemp": 27.1
+            },
+            {
+                "year": 1991,
+                "avgTemp": 28.7
+            },
+            {
+                "year": 2000,
+                "avgTemp": 29.3
+            },
+            {
+                "year": 2005,
+                "avgTemp": 30.6
+            },
+            {
+                "year": 2010,
+                "avgTemp": 31.8
+            },
+            {
+                "year": 2015,
+                "avgTemp": 35.0
+            },
+            {
+                "year": 2020,
+                "avgTemp": 33.2
+            },
+            {
+                "year": 2023,
+                "avgTemp": 37.5
+            },
+            {
+                "year": 2024,
+                "avgTemp": 39.7
+            }
+        ],
+        "winter": [
+            {
+                "year": 1990,
+                "avgTemp": 7.7
+            },
+            {
+                "year": 1991,
+                "avgTemp": 8.0
+            },
+            {
+                "year": 2000,
+                "avgTemp": 8.3
+            },
+            {
+                "year": 2005,
+                "avgTemp": 7
+            },
+            {
+                "year": 2010,
+                "avgTemp": 5
+            },
+            {
+                "year": 2015,
+                "avgTemp": 3
+            },
+            {
+                "year": 2020,
+                "avgTemp": -2
+            },
+            {
+                "year": 2023,
+                "avgTemp": -7.3
+            },
+            {
+                "year": 2024,
+                "avgTemp": -8.0
+            }
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+* {
+  font-family: system-ui;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+
+body {
+  background: linear-gradient(155.68deg, #191C21 36.2%, #0F0E10 63.19%, #6F632B 121.03%);
+}
