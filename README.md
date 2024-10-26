@@ -23,8 +23,9 @@ Esta página web ha sido desarrollada utilizando las siguientes tecnologías:
 - Gráficos interactivos para visualizar datos importantes.
 - Actualizaciones climáticas en tiempo real.
 
-- **Gráfico creado con Chart.js**: ![Gráfico Chart.js](./public/graph_preview.webp)
-- **Datos climáticos de la API**: ![Datos Climáticos](./public/api_info_preview.webp)
+![Gráfico Chart.js](./public/graph_preview.webp)
+![Datos Climáticos](./public/api_info_preview.webp)
 
 ¡Gracias por visitarnos y confiar en nuestros servicios!
+
 [💻 Visita el Sitio Web Aqui.](https://eitansteven.github.io/beto-service)
