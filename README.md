@@ -2,8 +2,7 @@
 
 ¡Bienvenidos a la página web oficial de nuestros servicios de plomería y gas! 🛠️💧
 
-<p align="center">Test de texto centrado.</p>
-![Vista Previa](./public/web_preview.webp)
+- ![Vista Previa](./public/web_preview.webp)
 [💻 Visita el Sitio Web Aqui.](https://eitansteven.github.io/beto-service)
 
 ## Descripción
