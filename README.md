@@ -2,7 +2,7 @@
 
 ¡Bienvenidos a la página web oficial de nuestros servicios de plomería y gas! 🛠️💧
 
-![Vista Previa](./public/web_preview.webp)
+![Vista Previa](./public/web_preview.png)
 [💻 Visita el Sitio Web Aqui.](https://eitansteven.github.io/beto-service)
 
 ## Descripción
