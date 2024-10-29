@@ -183,13 +183,20 @@ p {
 }
 
 @media (max-width:1070px) {
+  nav {
+    display: none;
+  }
+
   .hero-section {
-    align-items: center;
+    display: flex;
+    align-items: baseline;
+    padding: 5px;
   }
 
   .hero-content {
     display: flex;
     flex-direction: column-reverse;
+    max-height: 90%;
     align-items: center;
   }
 
@@ -355,6 +362,16 @@ p {
 .services-invitation span {
   color: var(--naranja-beto);
   font-family: var(--p-beto);
+}
+
+@media (max-width:390px) {
+  .service-section {
+    max-height: min-content;
+  }
+
+  .service-content {
+    top: 10px;
+  }
 }
 
 @media (max-width:1070px) {
