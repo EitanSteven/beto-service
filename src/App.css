@@ -183,11 +183,6 @@ p {
 }
 
 @media (max-width:1070px) {
-
-  main {
-    width: 100vw;
-  }
-
   .hero-section {
     align-items: center;
   }
@@ -216,7 +211,7 @@ p {
   }
 
   .main-logo {
-    max-width: 80%;
+    max-width: 250px;
     height: auto;
   }
 
@@ -253,7 +248,6 @@ p {
 }
 
 .service-card {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -369,8 +363,11 @@ p {
   }
 
   .service-content {
+    top: -10px;
     flex-direction: column;
+    justify-content: center;
     gap: 50px;
+    max-width: fit-content;
   }
 
   .service-card {
@@ -438,6 +435,7 @@ p {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+    margin-top: 2rem;
   }
 
   .reasons-content {
@@ -462,12 +460,12 @@ p {
 /*    CONTACT SECTION    */
 
 .contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 0;
 }
 
 .grid {
+  margin: auto;
+
   display: grid;
   gap: 1.5rem;
   max-width: 80%;
@@ -568,18 +566,18 @@ p {
 }
 
 @media (max-width: 1070px) {
-  .contact-section {
-    width: 100%;
-  }
-
   .box {
-    max-width: 90%;
+    width: 90%;
+    max-width: 100%;
+    padding: 5px;
   }
 
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     max-height: fit-content;
+    place-items: center;
+    max-width: 100%;
   }
 
   .main-box {

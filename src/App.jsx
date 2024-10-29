@@ -4,6 +4,7 @@ import { Services } from './components/Services'
 import { Reasons } from './components/Reasons';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { PreviewModal } from 'preview-modal'
 
 import './App.css'
 
