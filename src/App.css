@@ -141,9 +141,14 @@ p {
   border-radius: 25px;
   display: flex;
   align-items: center;
+  justify-content: center;
   max-height: 47px;
   min-height: 47px;
   gap: 10px;
+}
+
+.btn a:hover {
+  text-decoration: underline;
 }
 
 .icon {
@@ -354,6 +359,8 @@ p {
   bottom: 0;
   margin-bottom: 20px;
   border: solid 3px var(--naranja-beto);
+  max-width: 90%;
+  width: 90%;
 }
 
 .services-card-btn a {
