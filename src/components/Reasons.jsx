@@ -20,7 +20,7 @@ export function Reasons() {
 
                     <aside className='reasons-fonts'>
                         <p>
-                            "Desde 1960 a 2018, la temperatura media y máxima promedio anual han incrementado en 1 °C" ... "Las observaciones indican que las olas de calor1 se han incrementado, y que entre 2010 y 2018 se produjeron más del doble que enladécadade1990(Camilloni, 2020)."
+                            "Desde 1960 a 2018, la temperatura media y máxima promedio anual han incrementado en 1 °C" ... "Las observaciones indican que las olas de calor se han incrementado, y que entre 2010 y 2018 se produjeron más del doble que en la década de 1990." —Camilloni, 2020—.
                         </p>
                     </aside>
                 </article>
