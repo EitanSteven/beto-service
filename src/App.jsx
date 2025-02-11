@@ -20,7 +20,7 @@ function AppRoutes() {
 function App() {
   return (
     <ErrorBoundary>
-      <Router basename="/beto-service">
+      <Router basename="/">
         <AppRoutes />
       </Router>
     </ErrorBoundary>
