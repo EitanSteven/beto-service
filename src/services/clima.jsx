@@ -1,6 +1,5 @@
 const API_KEY = import.meta.env.VITE_API_KEY;
 
-console.log(API_KEY);
 //BASE : https://api.openweathermap.org/data/2.5/weather?q=Olavarria,%20Buenos%20Aires&appid=
 
 export function getClima() {
