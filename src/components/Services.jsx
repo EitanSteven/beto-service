@@ -35,7 +35,6 @@ export function Services() {
                             <li>Instalación de tuberias de gas.</li>
                             <li>Detección y reparación de fugas.</li>
                             <li>Instalación y reparación de cocinas.</li>
-                            <li>Instalación y reparación de calderas.</li>
                         </ul>
                         {/* Fin del componente */}
                         <button className="btn services-card-btn"><a href="#contact">Programar cita de Gasista</a></button>
@@ -50,7 +49,6 @@ export function Services() {
                             <li>Instalación de aires acondicionados.</li>
                             <li>Limpieza de filtros.</li>
                             <li>Remplazo de liquido refrigerante.</li>
-                            <li>Reparación de tablero digital.</li>
                             <li>Reparación problemas de conexión.</li>
                             <li>Asesoramiento según presupuestos.</li>
                         </ul>

@@ -7,6 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+notes.txt
 node_modules
 dist
 dist-ssr
@@ -24,4 +25,3 @@ dist-ssr
 *.sw?
 .env.local
 
-# const API_KEY = 'af00c6f76fd9fe6ce94fadf81dbcc2db';
