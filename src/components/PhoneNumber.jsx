@@ -13,7 +13,6 @@ export function PhoneNumber() {
     // Obtener el numero al cargar el componente
     useEffect(() => {
         const sessionToken = sessionStorage.getItem('token')
-        console.log(`Admin Token Session: ${sessionToken}`)
         const fetchData = async () => {
             const response = await fetchNumber.getNumber()
             const data = response.data[0]

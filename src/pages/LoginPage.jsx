@@ -35,11 +35,9 @@ function LoginPage() {
 
             const data = await response.json();
             // Maneja la respuesta de la API
-            console.log(data.message);
             if (response.ok) {
                 const token = data.data.token
                 sessionStorage.setItem('token', token)
-                console.log('Token Saved.')
                 redirect('/admin')
             }
         } catch (error) {

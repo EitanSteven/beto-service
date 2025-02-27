@@ -8,13 +8,9 @@ function AdminPage() {
 
     useEffect(() => {
         const token = sessionStorage.getItem('token')   //<=====
-        // console.log(`Token Admin: ${token}`)
         if (!token) {
-            console.log("No esta identificado")     // <===
             redirect('/login')
         }
-        console.log("Está identificado!")   // <===
-
     }, [])
 
     return (

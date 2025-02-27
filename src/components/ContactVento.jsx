@@ -1,8 +1,10 @@
 //import { Clock } from "lucide-react";
 import QrCode from '../assets/qr.png';
 import { MapPin, Clock, CopyNumber } from "./icons";
+import { useState, useEffect } from 'react';
 
 import { useClima } from "../hooks/useClima";
+import { FetchNumber } from "../services/FetchNumber"
 
 // Crear componente ClimaWidget fuera de useEffect
 const ClimaWidget = ({ clima }) => {
@@ -23,6 +25,23 @@ const ClimaWidget = ({ clima }) => {
 
 export default function ContactVento() {
     const climaData = useClima()
+    const fetchNumber = new FetchNumber()
+    const [number, setNumber] = useState("")
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await fetchNumber.getNumber()
+            if (!data.data[0].number) {
+                console.error("Number not found")
+                setNumber("Numero no disponible.")
+            }
+
+            const numberFetched = data.data[0].number
+            setNumber(numberFetched)
+        }
+
+        fetchData()
+    }, [])
 
     return (
         <div className="grid">
@@ -34,7 +53,7 @@ export default function ContactVento() {
                 </p>
                 <br />
                 <p className="text">¡Espero trabajar para ti!</p>
-                <p className='wp-number'>+54 9 2284 53-3866</p>
+                <p className='wp-number'>{number === "" ? "Cargando numero..." : number}</p>
             </div>
             {/* Weather Widget Box */}
             <div className="box small-box">
