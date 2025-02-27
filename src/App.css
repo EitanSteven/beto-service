@@ -714,3 +714,150 @@ footer {
   display: flex;
   gap: 20px;
 }
+
+
+/*  ADMIN PAGES   */
+/*  ADMIN PAGES   */
+/*  ADMIN PAGES   */
+/*  ADMIN PAGES   */
+
+/*    LOGIN PAGE    */
+
+.login-section {
+  height: 100vh;
+}
+
+.login-section-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-container {
+  border: solid 2px #fff;
+  border-radius: 25px;
+  padding: 2rem;
+  width: 450px;
+  max-width: 650px;
+  height: 350px;
+  max-height: 350px;
+}
+
+.login-container * {
+  color: #fff;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 15px 0;
+}
+
+.login-input {
+  min-height: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #ffffff32;
+  outline: none;
+  box-shadow: none;
+}
+
+.login-btn {
+  min-height: 2rem;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border: solid 2px #fff;
+  border-radius: 15px;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+}
+
+.login-btn:disabled {
+  color: #ffffff32;
+  border: 2px solid #ffffff32;
+}
+
+.login-error {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+/*  Admin Page  */
+
+.admin-section-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.admin-section {
+  width: 80vw;
+  height: 100%;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.phone-container {
+  border-bottom: solid 2px #ffffff32;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  max-width: 400px
+}
+
+.phone-container h3 {
+  font-size: 25px;
+  color: var(--naranja-beto);
+}
+
+.phone-container-edit {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.admin-btn {
+  background-color: transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border: none;
+  border: solid 1px #fff;
+  background-color: #ffffff32;
+  font-size: 15px;
+  padding: 15px;
+}
+
+.admin-btn:hover {
+  cursor: pointer
+}
+
+.phone-editor {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-number-input {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  border-bottom: solid 1px #ffffff32;
+  border-left: solid 1px #ffffff32;
+  padding: 10px;
+  outline: none;
+}
+
+.admin-btn:disabled {
+  color: #ffffff32;
+  border: solid 1px #ffffff32;
+}
