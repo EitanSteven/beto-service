@@ -1,6 +1,6 @@
 export class FetchQr {
     constructor() {
-        this.baseUrl = "http://localhost:5500/api/v1"
+        this.baseUrl = "https://betoservice-api.onrender.com/api/v1"
     }
 
     async getQr() {
