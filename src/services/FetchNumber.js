@@ -13,7 +13,7 @@ export class FetchNumber {
             const data = await response.json()
             return data
         } catch (error) {
-            console.log("Error al obtener el numero: ", error)
+            console.error("Error al obtener el numero: ", error)
             return null
         }
     }

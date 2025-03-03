@@ -1,10 +1,11 @@
 //import { Clock } from "lucide-react";
-import QrCode from '../assets/qr.png';
+// import QrCode from '../assets/qr.png';
 import { MapPin, Clock, CopyNumber } from "./icons";
 import { useState, useEffect } from 'react';
 
 import { useClima } from "../hooks/useClima";
 import { FetchNumber } from "../services/FetchNumber"
+import { FetchQr } from '../services/FetchQr'
 
 // Crear componente ClimaWidget fuera de useEffect
 const ClimaWidget = ({ clima }) => {
@@ -26,10 +27,12 @@ const ClimaWidget = ({ clima }) => {
 export default function ContactVento() {
     const climaData = useClima()
     const fetchNumber = new FetchNumber()
+    const fetchQr = new FetchQr()
     const [number, setNumber] = useState("")
+    const [qr, setQr] = useState("")
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchNumberData = async () => {
             const data = await fetchNumber.getNumber()
             if (!data.data[0].number) {
                 console.error("Number not found")
@@ -40,7 +43,14 @@ export default function ContactVento() {
             setNumber(numberFetched)
         }
 
-        fetchData()
+        const fetchQrData = async () => {
+            const data = await fetchQr.getQr()
+            if (!data) console.error("Link de codigo QR no encontrado")
+            setQr(data)
+        }
+
+        fetchQrData()
+        fetchNumberData()
     }, [])
 
     return (
@@ -71,7 +81,7 @@ export default function ContactVento() {
             </div>
             {/* QR Code Box */}
             <div className="box mid-box">
-                <img className="qr-code" src={QrCode} alt="Código QR de contacto." />
+                <img className="qr-code" src={qr} alt="Código QR de contacto." />
             </div>
         </div>
     );

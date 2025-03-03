@@ -801,9 +801,9 @@ footer {
   padding: 10px;
   margin: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  gap: 150px;
 }
 
 .phone-container {
@@ -860,4 +860,57 @@ footer {
 .admin-btn:disabled {
   color: #ffffff32;
   border: solid 1px #ffffff32;
+}
+
+.qr-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  max-width: none;
+}
+
+.qr-img {
+  border: solid 2px #fff;
+  border-radius: 20px;
+  width: 200px;
+  /* Se usa width en lugar de min/max-width para evitar inconsistencias */
+  height: 200px;
+  /* Se usa height en lugar de min/max-height */
+  margin-bottom: 20px;
+  overflow: hidden;
+  /* Evita que la imagen sobresalga si es más grande */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Hace que la imagen cubra el contenedor sin deformarse */
+}
+
+input[type="file"] {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  width: max-content;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 10px;
+  border: solid 2px #fff;
+  color: #fff;
+  background-color: #ffffff32;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.qr-btns {
+  display: flex;
 }
