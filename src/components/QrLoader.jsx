@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { FetchQr } from "../services/FetchQr";
+import RingLoader from '../assets/RingLoader.svg'
 
 export function QrLoader() {
     const [qrImg, setQrImg] = useState("");
@@ -61,11 +62,11 @@ export function QrLoader() {
         <div className="qr-component">
             <div className="qr-img">
                 {loading ? (
-                    <p>Cargando QR...</p>
+                    <img src={RingLoader} alt="Qr Loader" width="200" />
                 ) : error ? (
                     <p>Error al cargar la imagen</p>
                 ) : (
-                    <img src={qrImg || 'fallback.png'} alt="Getting qr image from API" width="200" />
+                    <img src={qrImg} alt="Getting qr image from API" width="200" />
                 )}
             </div>
 

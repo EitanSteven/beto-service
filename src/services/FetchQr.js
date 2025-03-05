@@ -43,34 +43,4 @@ export class FetchQr {
             return null
         }
     }
-
-
-
-    //async createQr(newQr, token) {
-    //    try {
-    //        const response = await fetch(`${this.baseUrl}/qr`, {
-    //            method: 'POST',
-    //            headers: {
-    //                "Content-Type": "application/json",
-    //                "Authorization": `Bearer ${token}`
-    //            },
-    //            body: JSON.stringify({
-    //                qr: newQr
-    //            })
-    //        })
-    //
-    //        if (!response.ok) {
-    //            throw new Error(`Error HTTP: ${response.status}`)
-    //        }
-    //
-    //        return await response.json()
-    //    } catch (error) {
-    //        console.error("Error al subir el QR: ", error)
-    //        return null
-    //    }
-    //}
-    //
-
-
-
 }

@@ -1,5 +1,4 @@
-//import { Clock } from "lucide-react";
-// import QrCode from '../assets/qr.png';
+import RingLoader from "../assets/RingLoader.svg"
 import { MapPin, Clock, CopyNumber } from "./icons";
 import { useState, useEffect } from 'react';
 
@@ -81,7 +80,7 @@ export default function ContactVento() {
             </div>
             {/* QR Code Box */}
             <div className="box mid-box">
-                <img className="qr-code" src={qr} alt="Código QR de contacto." />
+                <img className="qr-code" src={qr ? qr : RingLoader} alt="Código QR de contacto." />
             </div>
         </div>
     );
