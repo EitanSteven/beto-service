@@ -30,6 +30,7 @@ function LoginPage() {
             });
 
             if (!response.ok) {
+                loginBtn.disabled = false
                 throw new Error('Error en la autenticación');
             }
 
