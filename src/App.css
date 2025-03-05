@@ -752,6 +752,13 @@ footer {
   max-height: 350px;
 }
 
+
+@media (max-width:1070px) {
+  .login-container {
+    max-width: 80%;
+  }
+}
+
 .login-container * {
   color: #fff;
 }
